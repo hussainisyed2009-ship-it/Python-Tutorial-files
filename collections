@@ -1,0 +1,49 @@
+# collections: single variable used to store multiple items
+# list [] = ordered, mutable, allows duplicate items
+# set = {} unordered, mutable, no duplicate items
+# tuple = () ordered, immutable, allows duplicate items
+
+# dictionary = unordered, mutable, key-value pairs, no duplicate keys
+# frozenset = unordered, immutable, no duplicate items
+# complex = used to represent complex numbers, has a real and imaginary part
+# range = represents a sequence of numbers, commonly used in for loops
+
+fruits = ["apple", "orange", "banana", "coconut"]
+
+#print(fruits[::-1])  prints the list in reverse order
+
+print(dir(fruits)) # display all attributes and methods of the list class
+print(len(fruits))
+for fruit in fruits:
+    print(fruit)
+
+    print("apple" in fruits) # checks if apple is in the list
+
+fruits.append("grape")
+fruits.sort()
+fruits.reverse()
+fruits.insert(1, "blueberry") # inserts blueberry at index 1
+print(fruits.index("apple"))
+print(fruits)
+print(fruits.count("apple")) # counts the number of times apple appears in the list
+
+veggies = {"carrot", "broccoli", "spinach"} # tuple
+veggies.add("cauliflower") # adds cauliflower to the set
+veggies.remove("carrot") # removes carrot from the set
+veggies.pop() # removes a random item from the set
+fruits.clear() # removes all items from the list
+
+
+print(fruits)
+print(veggies)
+
+
+
+liquid = ('water', 'juice', 'air', 'idk')
+print(len(liquid))
+print(liquid.count('water'))
+
+for liqui in liquid:
+    print(liqui[::-1]) # use brackets
+
+print(liquid)

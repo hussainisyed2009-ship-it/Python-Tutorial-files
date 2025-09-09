@@ -1,0 +1,11 @@
+# input() = A function that prompts the user for input
+
+
+name = input("what is your name?")
+age = int(input("How old are you?"))#typecasting
+age += 1
+
+
+print(f"you are {age} years old!")
+print(f"Hello {name}!")
+

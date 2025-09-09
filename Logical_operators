@@ -1,0 +1,27 @@
+# logical operators: and, or, not
+# or = at least one condition is true
+# and = both conditions are true
+# not = reverses the result, returns false if the result is true
+# example 1
+
+temp = 25
+is_raining = False
+
+if temp > 35 or temp < 0 or is_raining: # or operator
+    print("outdoor events cancelled!")
+else:
+    print("outdoor events are on!")
+
+#and, not example
+
+temp = 25
+is_sunny = True
+
+if temp >= 35 and is_sunny: # and operator
+    print("it is a hot sunny day!")
+elif temp <= 0 and not is_sunny: # and and not operator
+    print("it is a cold and rainy day!")
+elif temp >= 20 and not is_sunny:
+    print("cloudy day!")
+else:
+    print("it is a nice day!")

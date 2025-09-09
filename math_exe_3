@@ -1,0 +1,8 @@
+import math
+
+bottom_sidelength = float(input("enter bottom side length: ")) # bottom side length input
+top_sidelength = float(input("enter top side length: ")) # top side length input
+
+hypotenuse = math.sqrt(bottom_sidelength**2 + top_sidelength**2) # hypotenuse calculation using Pythagorean theorem
+
+print(f"The hypotenuse is {round(hypotenuse ,2)}cm") # output with rounding to 2 decimal places

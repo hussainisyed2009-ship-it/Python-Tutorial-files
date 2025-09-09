@@ -1,0 +1,41 @@
+
+phone_number = input("Enter your phone number: ")
+
+phone_number.count("-") # count the number of dashes in the phone number
+
+phone_number.replace("-", "") # remove dashes from the phone number
+
+print(help(str)) # display all string methods
+print(dir(str)) # display all attributes and methods of the string class
+print(dir(int)) # display all attributes and methods of the integer class
+print(dir(float)) # display all attributes and methods of the float class
+print(dir(bool)) # display all attributes and methods of the boolean class
+print(dir(list)) # display all attributes and methods of the list class
+print(dir(dict)) # display all attributes and methods of the dictionary class
+print(dir(set)) # display all attributes and methods of the set class
+print(dir(tuple)) # display all attributes and methods of the tuple class
+print(dir(complex)) # display all attributes and methods of the complex class
+print(dir(object)) # display all attributes and methods of the object class
+print(dir(type)) # display all attributes and methods of the type class
+print(dir(bytes)) # display all attributes and methods of the bytes class
+print(dir(bytearray)) # display all attributes and methods of the bytearray class
+print(dir(memoryview)) # display all attributes and methods of the memoryview class
+print(dir(frozenset)) # display all attributes and methods of the frozenset class
+print(dir(range)) # display all attributes and methods of the range class
+print(dir(slice)) # display all attributes and methods of the slice class
+print(dir(property)) # display all attributes and methods of the property class
+print(dir(staticmethod)) # display all attributes and methods of the staticmethod class
+print(dir(classmethod)) # display all attributes and methods of the classmethod class
+print(dir(super)) # display all attributes and methods of the super class
+print(dir(Exception)) # display all attributes and methods of the Exception class
+print(dir(BaseException)) # display all attributes and methods of the BaseException class
+print(dir(StopIteration)) # display all attributes and methods of the StopIteration class
+print(dir(GeneratorExit)) # display all attributes and methods of the GeneratorExit class
+print(dir(KeyboardInterrupt)) # display all attributes and methods of the KeyboardInterrupt class
+print(dir(SystemExit)) # display all attributes and methods of the SystemExit class
+print(dir(ImportError)) # display all attributes and methods of the ImportError class
+print(dir(ModuleNotFoundError)) # display all attributes and methods of the ModuleNotFoundError class
+print(dir(IndexError)) # display all attributes and methods of the IndexError class
+print(dir(KeyError)) # display all attributes and methods of the KeyError class
+print(dir(ValueError)) # display all attributes and methods of the ValueError class
+print(dir(TypeError)) # display all attributes and methods of the TypeError class

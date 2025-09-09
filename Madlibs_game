@@ -1,0 +1,17 @@
+
+adj1 = input("Enter an adjective: ")
+adj2 = input("Enter another adjective: ")
+adj3 = input("Enter one more adjective: ")
+animal1 = input("Enter an animal: ")
+animal2 = input("Enter another animal: ")
+verb1 = input("Enter a verb: ")
+verb2 = input("Enter another verb: ")
+verb3 = input("Enter one more verb: ")
+noun1 = input("Enter a noun: ")
+
+
+print(f"Today I went to a {adj1} zoo.")
+print(f"In an exhibit i saw a {adj2} {animal1}.")
+print(f"It was {verb1}ing {verb2}ly.")
+print(f"I saw a {animal2} {verb3}ing on a {noun1}.")
+print(f"The {animal2} was very {adj3}.")

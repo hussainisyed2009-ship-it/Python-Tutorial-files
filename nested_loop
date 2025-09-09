@@ -1,0 +1,15 @@
+ # nested loops= a loop inside another loop
+ # outer loops:  the first loop that contains the inner loop
+ # inner loops:  a loop inside another loop
+
+rows = input("Enter number of rows: ")
+rows = int(rows)
+
+columns = input("Enter a starting number for columns: ")
+columns = int(columns)
+symbol = input("Enter a symbol to use: ")
+
+for x in range(rows): # outer loop: runs 3 times
+    for y in range(columns): # inner loop
+        print(symbol, end="") # prints the symbol on the same line
+    print() # prints a new line after the inner loop is done

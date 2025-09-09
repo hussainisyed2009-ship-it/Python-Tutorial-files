@@ -1,0 +1,45 @@
+
+questions = ("Answer yes or no",
+             "How planets in the galaxy?",
+             "Are you breathin rn?",
+             "Are you tall?",
+             "Are you short?")
+
+options = (("A. yes ", "B. no", "C. nah", "D. ye"),
+           ("A. 5", "B. 7", "C. 67", "D. more than 2"),
+           ("A. yeah", "B. nah", "C. i dunno", "D. maybe"),
+           ("A. maybe", "B. kinda", "C. yeah", "D. i donnu"),
+           ("A. u tell me", "B. r u?", "C. yes", "D. no"))
+
+answers = ("A", "D", "A", "D", "A")
+geusses = []
+score = 0
+
+question_num = 0
+
+
+for question in questions:
+    print("---------------------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+
+    geuss = input("Enter (A,B,C,D): ").upper()
+    geusses.append(geuss)
+    if geuss == answers[question_num]:
+        score += 1
+        print("CORRECT")
+    else:
+        print("WRONG")
+        print(f"{answers[question_num]}")
+    question_num += 1
+
+print(score)
+
+for answer in answers:
+    print(answer, end=" ")
+
+for geuss in geusses:
+    print(geuss, end=" ")
+
+    

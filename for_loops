@@ -1,0 +1,23 @@
+# for loops = execute some code a specific number of times
+
+for i in reversed(range(1, 12, 2)): # 1-11
+    print(i)
+
+print("Happy bday to you")
+
+credit_card = "1234-5678-9876-5432"
+
+for i in credit_card:
+    print(i, 1, 12)
+
+for i in credit_card:
+    if i == "-": # skips the hyphen
+        continue # skips the hyphen
+    print(i, end="") # prints on the same line
+
+for x in range(1, 21):
+    if x == 13:
+        continue # skips 13
+    print(x)
+    
+

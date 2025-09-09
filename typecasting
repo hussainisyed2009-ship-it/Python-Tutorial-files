@@ -1,0 +1,24 @@
+#Typecasting: process of converting one data type into another
+    #str(), int(), float(), bool()
+#good for handling user input because it is always a string but might need to be changed to another type
+
+name = "taha hussaini"
+age = 16
+gpa = 4.3
+is_student = True
+#gives the type of each variable
+print(type(name))
+print(type(age))
+print(type(gpa))
+print(type(is_student))
+#change variable type
+gpa = int(gpa)
+age = str(age)
+print(type(gpa))
+print(type(age))
+
+age += "1"
+print(age)
+
+name = bool(name)
+print(name)

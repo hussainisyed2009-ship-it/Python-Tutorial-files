@@ -1,0 +1,30 @@
+# format specifiers: {:flags} format a value based on what flags are used
+
+# .(number)f = formats a floating point number to the specified number of decimal places
+# :(number) = formats a string to a specified spaces
+# :03 = allocate and zero pad that many spaces
+# :< = left align
+# :> = right align
+# :^ = center align
+# :+ = show the sign for both positive and negative numbers
+# :- = show the sign for negative numbers only
+# := = show the sign to the left most position
+# : = insert comma before positive numbers
+# :, = insert comma seperator
+
+price = 300000001234567890.123456
+price2 = 1234567890.123456
+price3 = -1234567890.123456
+
+print(f"price is {price:.2f}") # price is 300000001234567890.12
+print(f"price 2 is {price2:< 20,.2f}") # price 2 is 1,234,567,890.12
+print(f"price 3 is {price3:> 20,.2f}") # price 3 is -1,234,567,890.12
+
+print(f"price is {price2:30}")
+print(f"price is {price2:010}")
+
+print(f"price is {price2:+}")
+print(f"price is {price3:-}")
+
+print(f"price is {price:+,.2f}")
+

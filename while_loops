@@ -1,0 +1,29 @@
+#while loops = execute some code while some condition remains true
+
+name = input("input your full name: ")
+
+while name == "":
+    print("you did not enter your name")
+    name = input("input your full name: ")
+print(f"hello {name}")
+
+age = int(input("enter your age: "))
+
+while age < 0 or age > 120:
+    print("you did not enter a valid age")
+    age = int(input("enter your age: "))
+print(f"you are {age} years old")
+
+food = input("enter your favorite food: ")
+
+while not food == "q":
+    print(f"you like {food}")
+    food = input("enter your favorite food (or 'q' to quit): ")
+print("you quit the program")
+
+money = float(input("enter the amount of money you have: $"))
+
+while money<0 or money>500000000000:
+    print("you did not enter a valid amount of money")
+    money = float(input("enter the amount of money you have: $"))
+print(f"you have ${money}")

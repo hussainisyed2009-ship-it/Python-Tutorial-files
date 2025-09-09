@@ -1,0 +1,43 @@
+
+name = input("input your full name")
+
+len(name) # length of the string
+
+result = name.upper() # convert to uppercase
+print(result)
+
+result = name.lower() # convert to lowercase
+print(result)
+
+result = name.title() # convert to title case
+print(result)
+
+result = name.strip() # remove leading and trailing whitespace
+print(result)
+
+result = name.replace(" ", "_") # replace spaces with underscores
+print(result)
+
+result = name.split(" ") # split the string into a list of words
+print(result)
+
+result = name.find("a") # find the index of the first occurrence of "a"
+print(result)
+
+result = name.rfind("a") # find the index of the last occurrence of "a"
+print(result)
+
+result = name.count("a") # count the number of occurrences of "a"
+print(result)
+
+result = name.startswith("A") # check if the string starts with "A"
+print(result)
+
+result = name.endswith("m") # check if the string ends with "m"
+print(result)
+
+result = name.isalpha() # check if the string contains only alphabetic characters
+print(result)
+
+result = name.capitalize() # capitalize the first character of the string
+print(result)

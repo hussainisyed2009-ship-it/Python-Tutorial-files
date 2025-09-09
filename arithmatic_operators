@@ -1,0 +1,14 @@
+
+friends = 5
+
+friends = friends + 1
+friends += 1 #shorthand operator #augmented assignment operator
+friends -= 2
+friends *= 3
+friends /= 2
+friends //= 2 #floor division
+friends **= 3 #exponentiation
+friends = friends ** 3
+remainder = friends % 4 #modulus operator and used for checking even or odd numbers
+print(remainder)
+print(friends)

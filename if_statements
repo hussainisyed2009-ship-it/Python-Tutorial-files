@@ -1,0 +1,50 @@
+# if = do some code only IF some condition is true
+# else = do some code if the condition is false
+# elif = check multiple conditions
+# nested if = an if statement inside another if statement
+# comparison operators: ==, !=, >, <, >=, <=
+# logical operators: and, or, not
+# membership operators: in, not in
+# identity operators: is, is not
+# short hand if = if statement on one line
+# short hand if else = if else statement on one line
+# ternary operator = one line if else statement
+# pass statement = does nothing, acts as a placeholder
+# example 1
+age = int(input("How old are you? "))
+
+if age >= 18 and age < 100:
+    print("You qualify for credit card!")
+elif age == 17:
+    print("You will qualify for a credit card next year!")
+elif age >= 100:
+    print("You are too old to get a credit card!")
+else:
+    print("You must be at least 18 years old to get a credit card.")
+
+response = input("Do you want some food? (yes/no) ")
+
+if response in ["yes", "y", "sure"]: # multiple conditions
+    print("Here is some food!")
+elif response in ["no", "n"]: # multiple conditions
+    print("Okay, no food for you!")
+else:
+    print("Invalid response!")
+
+name = input("What is your name? ")
+
+if name == "": # empty string
+    pass # do nothing
+else:
+    print(f"Hello, {name}!") # f string
+
+#boolean logic
+is_student = True
+is_hungry = False
+
+if is_student and is_hungry: # and operator
+    print("You are a hungry student!")
+if is_student or is_hungry: # or operator
+    print("You are either a student or hungry!")
+if not is_student or not is_hungry: # not operator
+    print("You are either not a student or not hungry!")

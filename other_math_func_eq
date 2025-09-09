@@ -1,0 +1,61 @@
+import math
+
+print(math.pi) #prints the value of pi
+print(math.e) #prints the value of e
+print(math.sqrt(16)) #prints the square root of 16
+print(math.factorial(5)) #prints the factorial of 5
+print(math.sin(math.pi/2)) #prints the sine of 90 degrees
+print(math.ceil(4.2)) #rounds up to the nearest whole number
+print(math.floor(4.7)) #rounds down to the nearest whole number
+print(math.log(100, 10)) #prints the logarithm of 100 to the base 10
+print(math.gcd(48, 18)) #prints the greatest common divisor of 48 and 18
+print(math.lcm(4, 5)) #prints the least common multiple of 4 and 5
+print(math.radians(90)) #converts degrees to radians
+print(math.degrees(math.pi/2)) #converts radians to degrees
+print(math.copysign(-5, 3)) #returns a float with the magnitude of the first argument and the sign of the second argument
+print(math.isqrt(20)) #returns the integer square root of the non-negative integer n
+print(math.prod([1, 2, 3, 4])) #returns the product
+print(math.dist((1, 2), (4, 6))) #returns the Euclidean distance between two points
+print(math.hypot(3, 4)) #returns the Euclidean norm, sqrt
+print(math.comb(5, 2)) #returns the number of ways to choose k items from n items without repetition and without order
+print(math.perm(5, 2)) #returns the number of ways to choose k items from n items without repetition and with order
+print(math.erf(1)) #returns the error function at x
+print(math.erfc(1)) #returns the complementary error function at x
+
+print(math.gamma(5)) #returns the gamma function at x
+print(math.lgamma(5)) #returns the natural logarithm of the absolute value of the
+print(math.tan(math.pi/4)) #prints the tangent of 45 degrees
+print(math.asin(1)) #prints the arcsine of 90 degrees
+print(math.acos(0)) #prints the arccosine of 90 degrees
+print(math.atan(1)) #prints the arctangent of 45 degrees
+print(math.atan2(1, 1)) #prints the arctangent of y/x
+print(math.sinh(0)) #prints the hyperbolic sine of 0
+print(math.cosh(0)) #prints the hyperbolic cosine of 0
+print(math.tanh(0)) #prints the hyperbolic tangent of 0
+print(math.expm1(1)) #returns e raised to the power of x minus 1
+print(math.log1p(1)) #returns the natural logarithm of 1 plus x
+print(math.fmod(5, 2)) #returns the remainder of x divided by y
+print(math.remainder(5, 2)) #returns the IEEE 754-style remainder of
+print(math.nextafter(1.0, 2.0)) #returns the next floating-point value after x towards y
+print(math.ulp(1.0)) #returns the value of the least significant bit of x
+print(math.isclose(1.0, 1.0000001)) #returns True
+print(math.isnan(float('nan'))) #returns True
+print(math.isinf(float('inf'))) #returns True
+print(math.isfinite(1.0)) #returns True
+print(math.cbrt(27)) #returns the cube root of x
+print(math.expm1(1)) #returns e raised to the power of x minus 1
+print(math.log1p(1)) #returns the natural logarithm of 1 plus x
+print(math.gamma(5)) #returns the gamma function at x
+print(math.lgamma(5)) #returns the natural logarithm of the absolute value of the
+print(math.factorial(5)) #returns the factorial of x
+print(math.sqrt(25)) #returns the square root of x
+print(math.pow(2, 3)) #returns 2 raised to the power of
+
+
+print(math.fsum([1.1, 2.2, 3.3])) #returns an accurate floating point sum of values in the iterable
+print(math.prod([1, 2, 3, 4])) #returns the product of values in the iterable
+print(math.dist((1, 2), (4, 6))) #returns the Eu
+print(math.hypot(3, 4)) #returns the Euclidean norm, sqrt(x*x + y*y)
+print(math.comb(5, 2)) #returns the number of ways to choose k items from n items without repetition and without order
+print(math.perm(5, 2)) #returns the number of ways to choose k items from n items without repetition and with order
+print(math.gcd(48, 18)) #returns the greatest common divisor of the integers

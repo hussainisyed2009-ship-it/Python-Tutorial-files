@@ -1,0 +1,28 @@
+first_name = "taha"
+
+print(f"hello, {first_name}")
+
+
+#int shouldnt be in quotes
+
+age = 16
+
+print(f"you are {age} years old")
+
+#floats
+
+price = 10.99
+
+print(f"the price is {price} dollars")
+
+#boolean
+
+is_student = True
+
+print(f"Are you a student? {is_student}")
+
+if is_student:
+    print("Welcome student!")
+else:
+    print("Welcome guest!")
+

@@ -1,0 +1,43 @@
+# dictionary = a collection of {key:value} pairs
+    #ordered and changeable. No duplications
+
+capitals = {"USA": "Washington D.C.",
+            "India": "NEw Dlehi",
+            "China": "Beijing",
+            "Russia": "Moscow"}
+#print(dir(capitals))
+#print(help(capitals))
+
+print(capitals.get("USA"))
+
+if capitals.get("Japan"):
+    print("Exists in system")
+else:
+    print("not in system")
+
+capitals.update({"Germany": "Berlin"}) #updates dictionary
+capitals.update({"USA": "Clinton"})
+
+capitals.pop("China") #removes said item
+capitals.popitem #deletes most recent item added
+capitals.clear #clears dictionary
+
+keys = capitals.keys()
+
+print(keys)
+print(capitals)
+
+for key in capitals.keys():
+    print(key)
+
+values = capitals.values()
+print(values)
+
+for value in capitals.values():
+    print(value)
+
+items = capitals.items()
+print(items)
+
+for key, value in capitals.items():
+    print(f"{key}: {value}")

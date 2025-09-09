@@ -1,0 +1,24 @@
+import random
+
+lowest = 1
+highest = 100
+answer = random.randint(lowest, highest)
+guesses = 0
+is_running = True
+
+
+
+while is_running:
+    guess = int(input("guess # 1 through 100: "))
+
+    if guess > 100 or guess < 1:
+        print(f"{guess} is out of range")
+    elif guess > answer or guess < 1:
+        print(f"{guess} is higher than then answer")
+    elif guess < answer:
+        print(f"{guess} is lower than answer")
+    else:
+        print(f"The answer is {answer}")
+        is_running = False
+    guesses += 1
+print(f"{guesses} guesses")
