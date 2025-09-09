@@ -1,0 +1,18 @@
+# keyword arguments = an argument preceded by an identifier
+#                       helps with readability
+#                      order of arguments doesn't matter
+#                       1. positional 2. default 3. keyword 4. arbitrary
+
+def hello(greeting, title, first, last):
+    print(f"{greeting} {title}{first}{last}")
+
+hello(title = "Mr.", greeting = "Hello", last = "Bob", first = "Sponge")
+# set value for each strign seperately to use keryword arguments
+# positional arguments always come first if not individually given a value in ()
+
+for x in range(1, 11):
+    print(x, end=" ") #seperates each # by with space
+
+print(1, 2, 3, 4, 5, 6, sep="-") #seperates each # by -
+
+

@@ -1,0 +1,23 @@
+
+def shipping_label(*args, **kwargs):
+    for arg in args:
+        print(arg, end=" ")
+    print()
+
+    if "apt" in kwargs:
+        print(f"{kwargs.get('street')}, {kwargs.get('apt')}")
+    else:
+        print(f"{kwargs.get('street')}")
+    
+    
+    
+    print(f"{kwargs.get('city')}")
+    print(f"{kwargs.get('state')}")
+    print(f"{kwargs.get('zip')}")
+
+shipping_label("Dr.", "Spongbob", "squarepants", "III",
+               street="123 fake st",
+               apt="100",
+               city="DT",
+               state="mich",
+               zip="78479827")

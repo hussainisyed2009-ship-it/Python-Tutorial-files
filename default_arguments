@@ -1,0 +1,22 @@
+import time
+# def arguments = default argument value for certain parameters
+#                   default is used when that argument is omitted
+#                   make your functions more flexible, reduces num of arguments
+#               1. positin 2. DEFAULT 3. keyword $ arbitrary
+
+def net(list_price, discount = 0, tax = 0.05): #discount and price have default value
+    return list_price * (1-discount) * (1+tax)
+
+print(net(500))
+print(net(500, 0.1)) # 0.1 ovverides default discount value
+print(net(500, 0.1, 0)) #overrides both tax and discount values
+
+
+def count(end, start =  0): #default arguments should be before non def arguments
+    for x in range (start, end+1):
+        print(x) # prints the time that the program has been running
+        time.sleep(1) # shuts off the program 1 sec after the timer is done
+
+    print("done")
+
+count(30, 15)
