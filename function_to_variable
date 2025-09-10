@@ -1,0 +1,15 @@
+
+def hello():
+    print("hello")
+
+print(hello)
+hi = hello # adds another name to the function
+print(hi) # prints where in the system's memory the function is located
+
+hi() #calls the connected function
+
+say = print
+say("Whoa! how does this work?")
+
+
+

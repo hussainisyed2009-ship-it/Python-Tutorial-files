@@ -1,0 +1,27 @@
+# walrus operator :=
+# assignment expression aka walrus operator
+# assigns values to variables as part of a larger expression
+
+happy = True
+
+print(happy)
+
+print(happy := False)
+
+#foods = list()
+#while True:
+    
+    #food = input("What foods do you like?")
+    #if food == "quit":
+        #break
+    #foods.append(food)
+#print(foods)
+
+#this is more simple
+foods = list()
+while food := input("what foods do you like?") != "quit": # if equal quit, then while loop stops
+    foods.append(food)
+
+
+
+
