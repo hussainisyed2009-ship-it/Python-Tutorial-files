@@ -1,0 +1,19 @@
+# zip(*iterables) = aggregate elements from two or more iterables (list, tuples, set, etc)
+#                   creates a zip object with paired elements store in tuples for each elements
+
+usernames = ["dude", "bro", "blud"]
+passwords = ("Password", "abc123", "geust")
+log_date = ["1/1/2025", "3/5/2354", "3/5/7533", "23/12/5673"]
+
+
+users = dict(zip(usernames, passwords))
+user_date = zip(usernames, passwords, log_date)
+
+
+
+for i in user_date:
+    print(i)
+
+
+for key, value in users.items():
+    print(key+" : "+value)

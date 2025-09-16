@@ -1,0 +1,38 @@
+# thread = flot of executions
+# multi threading helps run multiple programs at once
+
+import threading
+import time
+
+print(time.perf_counter())
+
+def eat_breakfest():
+    time.sleep(3)
+    print("you ate")
+
+def drink_coffe():
+    time.sleep(4)
+    print("you drank coffe")
+
+def study():
+    time.sleep(5)
+    print("you studied")
+
+
+
+x = threading.Thread(target=eat_breakfest, args=())
+x.start()
+
+y = threading.Thread(target=study, args=())
+y.start()
+
+z = threading.Thread(target=drink_coffe, args=())
+z.start()
+
+x.join()
+y.join()
+z.join()
+
+print(threading.active_count())
+print(threading.enumerate())
+print(time.perf_counter())

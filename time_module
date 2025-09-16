@@ -1,0 +1,28 @@
+import time
+
+print(time.ctime(0)) # converts a time xpressed in second since the refrence poitn epoch
+
+print(time.time()) # returns current seconds since epoch
+
+print(time.ctime(time.time())) # current date and time
+
+time_object = time.localtime() # current date and time with extra info
+print(time_object)
+
+time.strftime("%B %d %Y %H : %M: %S", time_object)
+
+local_time = time.strftime("%B %d %Y %H : %M: %S", time_object) # adds structure
+print(local_time)
+
+time_object = time.gmtime
+
+
+time_string = "20 April, 2020"
+time_onb = time.strptime(time_string, "%d %B, %Y")
+print(time_onb)
+
+
+time_tuple = (2020, 4, 20, 4,20,0, 5, 5, 0)
+time_tp = time.asctime(time_tuple)
+print(time_tp)
+
