@@ -1,0 +1,25 @@
+from tkinter import *
+
+window = Tk()
+
+photo = PhotoImage('speed.jpg')
+
+
+
+label = Label(window, 
+              text="Hello world", 
+              font=('arial', 40, 'bold'), 
+              fg='#00ff00', 
+              bg='black',
+              relief=RAISED,
+              bd=10,
+              padx=30,
+              pady=40,
+              image=photo,
+              compound='bottom')
+
+label.pack()
+#label.place(x=200, y=200)
+
+
+window.mainloop()

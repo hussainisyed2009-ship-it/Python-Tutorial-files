@@ -1,0 +1,32 @@
+from tkinter import *
+
+window = Tk()
+
+#photo = PhotoImage(file=r'C:\\Users\\Taha  Hussaini\Desktop\\tutorial.py\\speed.jpg')
+count = 0
+
+def click():
+    global count
+    count += 1
+    print(count)
+
+button = Button(window,
+                text="click me!",
+                command=click,
+                font=('Comic Sans', 30),
+                fg="green",
+                bg="black",
+                activeforeground="blue",
+                activebackground="red",
+                state=ACTIVE,
+                )
+button.pack()
+
+
+
+
+
+
+
+
+window.mainloop()
