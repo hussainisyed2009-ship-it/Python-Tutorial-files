@@ -1,0 +1,47 @@
+from tkinter import *
+
+def buttons():
+    if(x.get() == 0):
+        print("you got pizza")
+    elif(x.get() == 1):
+        print("you got hamburger")
+    else:
+        print("you got hotdog")
+
+window = Tk()
+
+hotdogs= PhotoImage(file='hotdog.png')
+burgers = PhotoImage(file='burger.png')
+pizza = PhotoImage(file='pizza.png')
+foodimages = [hotdogs, burgers, pizza]
+
+food = ["pizza", "hamburger", "hotdog"]
+
+x = IntVar()
+
+for index in range(len(food)):
+    radiobutton = Radiobutton(window, 
+                              text=food[index], # adds text
+                              variable=x,# group radio buttons together if they share same variable,
+                              value=index, #assigns each radio button a different value
+                              padx=25,
+                              pady=10,
+                              font=("Impact", 25),
+                              image = foodimages[index],# image to each radio button
+                              compound = 'left', #adds image to the left with text 
+                              indicatoron = 0, # eliminates circle indicators
+                              width = 375,  # width of buttons
+                              command = buttons) # sets command of radio button to function
+    radiobutton.pack(anchor=W)
+
+
+
+
+
+
+
+
+
+
+
+window.mainloop()
