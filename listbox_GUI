@@ -1,0 +1,40 @@
+from tkinter import *
+
+def submit():
+    print(listbox.get(listbox.curselection()))
+
+
+
+window = Tk()
+
+listbox = Listbox(window,
+                  bg="grey",
+                  font=("Constantia", 35),
+                  width=12,
+                  )
+listbox.pack()
+
+
+
+
+listbox.insert(1, "pizza")
+listbox.insert(2, "rice")
+listbox.insert(3, "air")
+listbox.insert(4, "water")
+listbox.insert(5, "polution")
+
+
+listbox.config(height=listbox.size())
+
+entry = Entry(window)
+entry.pack()
+
+entrybutton = Button(window, text="submit", command=submit)
+entrybutton.pack()
+
+submitbutton = Button(window, text="submit", command=submit)
+submitbutton.pack()
+
+
+
+window.mainloop()

@@ -1,0 +1,58 @@
+from tkinter import *
+
+def submit():
+    print("The temp is:"+str(scale.get())+"C")
+
+
+
+
+
+window = Tk()
+
+hotimage=PhotoImage(file='pizza.png')
+hotlabel = Label(image=hotimage)
+hotlabel.pack
+
+
+scale = Scale(window,
+              from_= 100,
+              to=0,
+              length=600,
+              orient=VERTICAL,
+              font=('Consolas',20),
+              tickinterval=10,
+              showvalue=0,
+              troughcolor='grey',
+              fg='red',
+              bg='black')
+
+button = Button(window,
+                text = 'submit',
+                command=submit)
+scale.set(((scale['from']-scale['to'])/2)+scale['to']) # puts the idetifier at the middle everytime
+
+
+scale.pack()
+button.pack()
+
+
+
+coldimage=PhotoImage(file='hotdog.png')
+coldlabel = Label(image=coldimage)
+coldlabel.pack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.mainloop()
